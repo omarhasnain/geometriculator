@@ -38,5 +38,14 @@ function calculateTriangleArea(){
     const triangleAreaSpan = document.getElementById('triangle-area');
     triangleAreaSpan.innerText = area;
 
+    // ----  display triangle in area calculation
+    displayArea('Triangle', area);
 
+
+}
+
+function displayArea(shape, area){
+    var listItem = document.createElement('li');
+    listItem.textContent = shape + ': ' + area + 'cm²';
+    document.getElementById('calculatedAreaList').appendChild(listItem);
 }

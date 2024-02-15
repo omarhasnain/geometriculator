@@ -20,4 +20,14 @@ function calculateRectangleArea(){
     const rectangleArea = document.getElementById('rectangle-area');
     rectangleArea.innerText = area;
 
+    // display rectangle area into Area Calculation
+    displayArea('Rectangle', area); 
+
+}
+
+function displayArea(shape, area){
+    var listItem = document.createElement('li');
+    listItem.textContent = shape + ': ' + area + 'cm²';
+    document.getElementById('calculatedAreaList').appendChild(listItem);
+
 }
