@@ -7,17 +7,26 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="mx-auto">
-  <header>
+<body class="m-8">
+  <header class="grid grid-cols-1 mb-8 lg:w-full w-[425px]">
+    <div class="navbar bg-blue-100">
+        <div class="navbar-start">
+            <p><a class="btn btn-ghost text-xl lg:text-5xl font-extrabold">Interactive</a></p>
+            <div class="text-base lg:text-3xl font-medium">Geometriculator</div>
+        </div>
 
-  </header>
+        <div class="navbar-end">
+            <a class="btn btn-primary text-white font-bold">Button</a>
+        </div>
+    </div>
+</header>
   <main>
-    <div class="mx-auto lg:m-8 flex flex-col md:flex-row lg:flex-row">
+    <div class="flex flex-col md:flex-row lg:flex-row">
      <!-- shape card container part -->
       <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
         <!-- triangle card -->
-        <div class="card px-6 py-10 w-96 lg:w-80 gap-6  bg-base-100 shadow-xl">
+        <div class="card px-6 py-10 w-[425px] lg:w-80 gap-6  bg-base-100 shadow-xl">
           <figure><img src="/images/triangle.png" alt="Shoes" /></figure>
           <div class="card-body">
             <h2 class="text-center text-2xl font-bold">Triangle</h2>
@@ -40,14 +49,14 @@
         </div>
 
         <!-- rectangle card -->
-        <div class="card py-10 w-96 lg:w-80 bg-base-100 shadow-xl">
+        <div class="card py-10 w-[425px] lg:w-80 bg-base-100 shadow-xl">
           <figure><img src="/images/rectangle.png" alt="Shoes" /></figure>
           <div class="card-body">
             <h2 class="text-center text-2xl font-bold">Rectangle</h2>
             <p class="text-center">Area (A) = w x l</p>
-            <div class="">
+            <div class="text-center">
               <input id="rectangle-width" class="w-24 p-2 rounded-sm text-2xl" type="text" placeholder="w">
-            <span class="mx-1">cm</span>
+            <span class="">cm</span>
             <input id="rectangle-length" class="w-24 p-2 rounded-sm text-2xl" type="text" name="" placeholder="l">
             <span>cm</span>
             </div>
@@ -63,7 +72,7 @@
         </div>
 
         <!-- parallelogram card -->
-        <div class="card px-6 py-10 w-96 lg:w-80 gap-6  bg-base-100 shadow-xl">
+        <div class="card px-6 py-10 w-[425px] lg:w-80 gap-6  bg-base-100 shadow-xl">
           <figure><img src="/images/parallelogram.png" alt="Shoes" /></figure>
           <div class="card-body">
             <h2 class="text-center text-2xl font-bold">Parallelogram</h2>
@@ -86,7 +95,7 @@
         </div>
 
         <!-- rhombus card -->
-        <div class="card px-6 py-10 w-96 lg:w-80 bg-base-100 shadow-xl">
+        <div class="card px-6 py-10 w-[425px] lg:w-80 bg-base-100 shadow-xl">
           <figure><img src="/images/rhombus.png" alt="Shoes" /></figure>
           <div class="card-body">
             <h2 class="text-center text-2xl font-bold">Rhombus</h2>
@@ -109,7 +118,7 @@
         </div>
 
         <!-- pentagon card -->
-        <div class=" card px-6 py-10 w-96 lg:w-80 gap-6  bg-base-100 shadow-xl">
+        <div class=" card px-6 py-10 w-[425px] lg:w-80 gap-6  bg-base-100 shadow-xl">
           <figure><img src="/images/pentagon.png" alt="Shoes" /></figure>
           <div class="card-body">
             <h2 class="text-center text-2xl font-bold">Pentagon</h2>
@@ -132,7 +141,7 @@
         </div>
 
         <!-- ellipse card -->
-        <div class="card px-6 py-10 w-96 lg:w-80  bg-base-100 shadow-xl">
+        <div class="card px-6 py-10 w-[425px] lg:w-80  bg-base-100 shadow-xl">
           <figure><img src="/images/ellipse.png" alt="Shoes" /></figure>
           <div class="card-body">
             <h2 class="text-center text-2xl font-bold">Ellipse</h2>
@@ -158,7 +167,7 @@
       
       
       <!-- area calculation -->
-      <div class="w-64 h-[620px] mt-10 lg:mt-0 border-2 border-gray-500">
+      <div class="lg:w-64 w-[425px] h-[620px] mt-10 lg:mt-0 border-2 border-gray-500">
         <h3 class="text-3xl text-center p-4">Area Calculation</h3>
         <p>
           <ul id="calculatedAreaList">
