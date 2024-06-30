@@ -1,2 +1,2 @@
 # geometriculator
-Live Link: https://lambent-lily-700391.netlify.app/
+Live Link: https://geometriculator.netlify.app/
